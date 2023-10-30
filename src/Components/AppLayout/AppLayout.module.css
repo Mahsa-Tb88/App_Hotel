@@ -1,0 +1,15 @@
+.app_layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar {
+  width: 50%;
+  background-color: aqua;
+  height: 100vh;
+}
+.map {
+  width: 50%;
+  background-color: rgb(225, 194, 255);
+  height: 100vh;
+}
