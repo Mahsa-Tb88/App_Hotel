@@ -13,11 +13,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
 import { createSearchParams, useNavigate } from "react-router-dom";
-// import {
-//   createSearchParams,
-//   useNavigate,
-//   useSearchParams,
-// } from "react-router-dom";
+
 function Header() {
   const [showBooking, setShowBooking] = useState(false);
   const [showDate, setShowDate] = useState(false);
@@ -41,7 +37,7 @@ function Header() {
   const searchHandler = () => {
     const encodedParams = createSearchParams({
       date: JSON.stringify(date),
-      destination: "destination",
+      destination: refLocation.current.value,
       booking: JSON.stringify(booking),
     });
     navigate({
@@ -49,11 +45,12 @@ function Header() {
       search: encodedParams.toString(),
     });
   };
+  const refLocation = useRef();
   return (
     <div className={style.header}>
       <div>
         <HiLocationMarker className={style.location} />
-        <input className={style.inputSearch} />
+        <input className={style.inputSearch} ref={refLocation} />
       </div>
       <div className={style.sectionDate}>
         <FcCalendar className={style.calender} />

@@ -1,0 +1,41 @@
+.title {
+  font-size: 25px;
+  margin: 6rem 0 4rem 0;
+}
+
+.hotel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 8px;
+}
+.desc{
+    width: 40%;
+}
+.desc .location {
+  color: rgb(32, 32, 32);
+  font-size: 18px;
+  font-weight: 700;
+}
+.desc .name {
+  color: rgb(126, 125, 125);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.desc .price {
+  color: rgb(32, 32, 32);
+  font-size: 15px;
+ 
+}
+
+.desc .price span {
+  margin-right: 7px;
+}
