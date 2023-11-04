@@ -12,7 +12,7 @@ function Hotels() {
       <h2 className={style.title}>Search Results ({data.length})</h2>
       {data.map((item) => {
         return (
-          <Link to={`/hotels/${item.id}`} key={item.id}>
+          <Link to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`} key={item.id}>
             <div className={style.hotel}>
               <img
                 src={item.picture_url.url}

@@ -1,14 +1,17 @@
 .app_layout {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   width: 97%;
+  height: calc(100vh - 130px);
   margin: 0 auto;
 }
 .sidebar {
   width: 40%;
+  overflow-y: scroll;
+  padding-right: 1rem;
 }
 .map {
-  width: 55%;
-  background-color: rgb(225, 194, 255);
+  /* width: 55%; */
+  /* background-color: rgb(225, 194, 255); */
 }

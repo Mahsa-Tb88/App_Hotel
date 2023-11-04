@@ -1,19 +1,6 @@
-*,
-*::after,
-*::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
-}
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
 
-html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Fredoka One", cursive;
-  font-family: "Kreon", serif;
-}
+.leaflet-container {
+  height: 80vh;
+  width: 60vw; 
+} 
