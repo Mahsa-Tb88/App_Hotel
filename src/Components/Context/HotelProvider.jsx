@@ -4,7 +4,6 @@ import useFetchData from "../../Hooks/useFetchData";
 const HotelContext = createContext();
 function HotelProvider({ children }) {
   const [searchParams, setSearchParams] = useSearchParams();
-  console.log(searchParams);
   const destination = searchParams.get("destination");
   const room = JSON.parse(searchParams.get("booking"))?.Room;
   const { isLoading, data } = useFetchData(

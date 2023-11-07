@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./Hotels.module.css";
 import { useHotels } from "../Context/HotelProvider";
 
 function Hotels() {
   const { isLoading, data } = useHotels();
+  const [selectHotel, setSelectHotel] = useState(null);
   //   console.log(data);
   isLoading ? <div>Is Loading Data ... </div> : "";
   return (
@@ -12,8 +13,11 @@ function Hotels() {
       <h2 className={style.title}>Search Results ({data.length})</h2>
       {data.map((item) => {
         return (
-          <Link to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`} key={item.id}>
-            <div className={style.hotel}>
+          <Link
+            to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
+            key={item.id}
+          >
+            <div className={`${style.hotel} , ${style.select}`}>
               <img
                 src={item.picture_url.url}
                 alt={item.name}

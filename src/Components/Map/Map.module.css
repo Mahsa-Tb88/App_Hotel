@@ -1,1 +1,20 @@
+.MapContainer {
+  position: relative;
+}
+.location {
+  font-size: 15px;
+  z-index: 1000;
+  background-color: rgb(2, 69, 120);
+  color: #fff;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border:2px solid rgb(2, 69, 120);
+}
 
+.location:hover {
+  background-color: #fff;
+  color: rgb(2, 69, 120);
+}
