@@ -4,14 +4,14 @@ import style from "./LocationList.module.css";
 function LocationList() {
   const { isLoading, data } = useFetchData("http://localhost:5000/hotels");
   // isLoading ? <div>data is loading</div> : "";
-  console.log(data);
+  // console.log(data);
   return (
     <div className={style.location_list_container}>
       <h2> Nearby Location</h2>
       <div className={style.location_list}>
         {data.map((item) => {
           return (
-            <div>
+            <div key={item.id}>
               <img src={item.picture_url.url} className={style.img} />
               <div>
                 <h4 className={style.location}>{item.smart_location}</h4>

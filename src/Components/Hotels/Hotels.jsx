@@ -4,9 +4,7 @@ import style from "./Hotels.module.css";
 import { useHotels } from "../Context/HotelProvider";
 
 function Hotels() {
-  const { isLoading, data } = useHotels();
-  const [selectHotel, setSelectHotel] = useState(null);
-  //   console.log(data);
+  const { isLoading, data, currentHotel } = useHotels();
   isLoading ? <div>Is Loading Data ... </div> : "";
   return (
     <div>
@@ -17,7 +15,11 @@ function Hotels() {
             to={`/hotels/${item.id}?lat=${item.latitude}&lng=${item.longitude}`}
             key={item.id}
           >
-            <div className={`${style.hotel} , ${style.select}`}>
+            <div
+              className={`${style.hotel} , ${
+                currentHotel.id == item.id ? style.select : ""
+              }`}
+            >
               <img
                 src={item.picture_url.url}
                 alt={item.name}
