@@ -17,7 +17,7 @@ function Map({ marketLocations }) {
   const lat = searchParams.get("lat");
   const lng = searchParams.get("lng");
   // console.log(lat ? "yes" : "no");
-  // console.log(mapCenter, [lat, lng]);
+  console.log(lat, lng);
   const {
     isLoading: isLoadingPosition,
     position: geoLocationPosition,
@@ -74,6 +74,6 @@ function ChangeCenter({ position }) {
 function DetectClick() {
   const navigate = useNavigate();
   useMapEvent({
-    click: (e) => navigate(`/bookmark?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
+    click: (e) => navigate(`/bookmark/?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
   });
 }

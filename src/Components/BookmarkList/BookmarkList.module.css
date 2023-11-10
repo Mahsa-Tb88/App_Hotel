@@ -1,0 +1,32 @@
+.header {
+  font-size: 20px;
+  margin: 2rem 0;
+}
+
+.section {
+  border: 1px solid #dddcdc;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.section:hover {
+  background-color: #dddcdc;
+}
+
+.flag {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.city {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.country {
+  font-size: 1.5rem;
+}
+.current_bookmark {
+  background-color: #dddcdc;
+}

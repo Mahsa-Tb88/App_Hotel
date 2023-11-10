@@ -7,7 +7,6 @@ import { useHotels } from "../Context/HotelProvider";
 function SingleHotel() {
   const { id } = useParams();
   const { getHotel, isLoadingCurrentHotel, currentHotel } = useHotels();
-  console.log("current hotel is...", currentHotel);
 
   useEffect(() => {
     getHotel(id);
