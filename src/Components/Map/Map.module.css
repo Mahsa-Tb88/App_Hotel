@@ -3,7 +3,7 @@
 }
 .location {
   font-size: 15px;
-  z-index: 1000;
+  /* z-index: 1000; */
   background-color: rgb(2, 69, 120);
   color: #fff;
   position: absolute;

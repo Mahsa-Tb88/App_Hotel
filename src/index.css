@@ -59,3 +59,8 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+
+.rdrCalendarWrapper {
+  z-index: 10000;
+  background-color: #fff;
+}
