@@ -1,4 +1,10 @@
-import React, { Children, createContext, useContext, useState } from "react";
+import React, {
+  Children,
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import useFetchData from "../../Hooks/useFetchData";
 import axios from "axios";
 import toast from "react-hot-toast";
@@ -7,7 +13,8 @@ const BookmarkContext = createContext();
 function BookmarkProvider({ children }) {
   const Base_URL = "http://localhost:5000";
   const [currentBookmark, setCurrentBookmark] = useState({});
-  const { isLoading, data: bookmarks } = useFetchData(`${Base_URL}/bookmarks`);
+  const [bookmarks, setBookmarks] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   const [isLoadingCurrBookmark, setIsLoadingCurrBookmark] = useState(false);
   async function getBookmark(id) {
     setIsLoadingCurrBookmark(true);
@@ -20,6 +27,30 @@ function BookmarkProvider({ children }) {
       setIsLoadingCurrBookmark(false);
     }
   }
+  useEffect(() => {
+    async function FetchBookmarkList() {
+      setIsLoadingCurrBookmark(true);
+      try {
+        const { data } = await axios.get(`${Base_URL}/bookmarks/`);
+        setBookmarks(data);
+      } catch (error) {
+        toast.error(error.message);
+      } finally {
+        setIsLoadingCurrBookmark(false);
+      }
+    }
+  }, []);
+  async function createBookmark(newBookmark) {
+    setIsLoadingCurrBookmark(true);
+    try {
+      const { data } = await axios.post(`${Base_URL}/bookmarks/`, newBookmark);
+      setBookmarks((prev) => [...prev, data]);
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
+      setIsLoadingCurrBookmark(false);
+    }
+  }
   return (
     <BookmarkContext.Provider
       value={{
@@ -28,6 +59,7 @@ function BookmarkProvider({ children }) {
         isLoadingCurrBookmark,
         currentBookmark,
         getBookmark,
+        createBookmark,
       }}
     >
       {children}

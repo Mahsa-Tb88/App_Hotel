@@ -8,29 +8,27 @@ import {
   useMapEvent,
 } from "react-leaflet";
 import style from "./Map.module.css";
-import { useHotels } from "../Context/HotelProvider";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import useGeoLocation from "../../Hooks/useGeoLocation";
+import useUrlLocation from "../../Hooks/useUrlLocation";
 function Map({ marketLocations }) {
   const [mapCenter, setMapCenter] = useState([48, 2.35]);
-  const [searchParams, setSearchParams] = useSearchParams();
-  const lat = searchParams.get("lat");
-  const lng = searchParams.get("lng");
-  // console.log(lat ? "yes" : "no");
-  console.log(lat, lng);
+  const [lat, lng] = useUrlLocation();
+
   const {
     isLoading: isLoadingPosition,
     position: geoLocationPosition,
     getPosition,
   } = useGeoLocation();
+
+  useEffect(() => {
+    if (geoLocationPosition?.lat && geoLocationPosition?.lng)
+      setMapCenter([geoLocationPosition.lat, geoLocationPosition.lng]);
+  }, [geoLocationPosition]);
   useEffect(() => {
     if (lat && lng) setMapCenter([lat, lng]);
   }, [lat, lng]);
 
-  useEffect(() => {
-    if (geoLocationPosition?.lat)
-      setMapCenter([geoLocationPosition.lat, geoLocationPosition.lng]);
-  }, [geoLocationPosition]);
   return (
     <div>
       <MapContainer
@@ -74,6 +72,7 @@ function ChangeCenter({ position }) {
 function DetectClick() {
   const navigate = useNavigate();
   useMapEvent({
-    click: (e) => navigate(`/bookmark/?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
+    click: (e) =>
+      navigate(`/bookmark/add?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
   });
 }

@@ -49,7 +49,12 @@
       "host_neighbourhood": null,
       "host_listings_count": 1,
       "host_total_listings_count": 1,
-      "host_verifications": ["email", "phone", "facebook", "reviews"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "facebook",
+        "reviews"
+      ],
       "street": "Amsterdam, Noord-Holland 1054, Netherlands",
       "neighbourhood": null,
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -114,7 +119,9 @@
         "lon": 2.35,
         "lat": 48.86
       },
-      "features": ["Host Has Profile Pic"]
+      "features": [
+        "Host Has Profile Pic"
+      ]
     },
     {
       "id": "9192415",
@@ -305,7 +312,11 @@
       "host_neighbourhood": "Oud-West",
       "host_listings_count": 3,
       "host_total_listings_count": 3,
-      "host_verifications": ["email", "phone", "reviews"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews"
+      ],
       "street": "Oud-West, Amsterdam, North Holland 1054, Netherlands",
       "neighbourhood": "Oud-West",
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -374,7 +385,10 @@
         "lon": 4.875639539930118,
         "lat": 52.36456756846072
       },
-      "features": ["Host Has Profile Pic", "Is Location Exact"]
+      "features": [
+        "Host Has Profile Pic",
+        "Is Location Exact"
+      ]
     },
     {
       "id": "13153299",
@@ -695,7 +709,10 @@
       "host_neighbourhood": null,
       "host_listings_count": 1,
       "host_total_listings_count": 1,
-      "host_verifications": ["email", "reviews"],
+      "host_verifications": [
+        "email",
+        "reviews"
+      ],
       "street": "Amsterdam, North Holland, Netherlands",
       "neighbourhood": null,
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -765,7 +782,9 @@
         "lon": 4.865594943841575,
         "lat": 52.36667871194905
       },
-      "features": ["Host Has Profile Pic"]
+      "features": [
+        "Host Has Profile Pic"
+      ]
     },
     {
       "id": "13465532",
@@ -947,7 +966,11 @@
       "host_neighbourhood": null,
       "host_listings_count": 0,
       "host_total_listings_count": 0,
-      "host_verifications": ["email", "phone", "reviews"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews"
+      ],
       "street": "Amsterdam, NH 1056, Netherlands",
       "neighbourhood": null,
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -1021,7 +1044,9 @@
         "lon": 4.853345068114508,
         "lat": 52.37080138742488
       },
-      "features": ["Host Has Profile Pic"]
+      "features": [
+        "Host Has Profile Pic"
+      ]
     },
     {
       "id": "7890890",
@@ -1072,7 +1097,12 @@
       "host_neighbourhood": "Oud-West",
       "host_listings_count": 1,
       "host_total_listings_count": 1,
-      "host_verifications": ["email", "phone", "reviews", "jumio"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews",
+        "jumio"
+      ],
       "street": "Oud-West, Amsterdam, Noord-Holland 1054, Netherlands",
       "neighbourhood": "Oud-West",
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -1206,7 +1236,12 @@
       "host_neighbourhood": "Oud-West",
       "host_listings_count": 2,
       "host_total_listings_count": 2,
-      "host_verifications": ["email", "phone", "reviews", "jumio"],
+      "host_verifications": [
+        "email",
+        "phone",
+        "reviews",
+        "jumio"
+      ],
       "street": "Oud-West, Amsterdam, Noord-Holland 1057, Netherlands",
       "neighbourhood": "Oud-West",
       "neighbourhood_cleansed": "De Baarsjes - Oud-West",
@@ -1333,10 +1368,86 @@
       "longitude": "67.78003711374224",
       "host_location": "Baba Kot Pakistan",
       "id": 8
+    },
+    {
+      "cityName": "Ahar",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "38.53097889440024",
+      "longitude": "47.16773986816407",
+      "host_location": "Ahar Iran (Islamic Republic of)",
+      "id": 9
+    },
+    {
+      "cityName": "Tabriz",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "37.94419750075404",
+      "longitude": "46.37672424316407",
+      "host_location": "Tabriz Iran (Islamic Republic of)",
+      "id": 10
+    },
+    {
+      "cityName": "Ferolles-Attilly",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "48.75281895963222",
+      "longitude": "2.634658813476563",
+      "host_location": "Ferolles-Attilly France",
+      "id": 11
+    },
+    {
+      "cityName": "Sari",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "36.601193285301704",
+      "longitude": "53.01795959472656",
+      "host_location": "Sari Iran (Islamic Republic of)",
+      "id": 12
+    },
+    {
+      "cityName": "Villers-aux-Noeuds",
+      "country": "France",
+      "countryCode": "FR",
+      "latitude": "49.18367483593742",
+      "longitude": "3.996963500976563",
+      "host_location": "Villers-aux-Noeuds France",
+      "id": 13
+    },
+    {
+      "cityName": "Lohra",
+      "country": "Germany",
+      "countryCode": "DE",
+      "latitude": "50.68245937431572",
+      "longitude": "8.633193969726564",
+      "host_location": "Lohra Germany",
+      "id": 14
+    },
+    {
+      "cityName": "Ahar",
+      "country": "Iran (Islamic Republic of)",
+      "countryCode": "IR",
+      "latitude": "38.56677260893379",
+      "longitude": "46.88758850097656",
+      "host_location": "Ahar Iran (Islamic Republic of)",
+      "id": 15
     }
   ],
-
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }

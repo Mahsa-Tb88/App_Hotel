@@ -1,0 +1,71 @@
+.title {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.form {
+  width: 70%;
+}
+.formcontrol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.formcontrol label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.formcontrol input {
+  border: 1px solid rgb(215, 214, 214);
+  padding: 6px 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.btn_back {
+  border: 1px solid #d4d4d4;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+.btn_back:hover {
+  background-color: #d4d4d4;
+}
+.btn_add {
+  border: 1px solid #a14db8;
+  padding: 5px 13px;
+  border-radius: 3px;
+  background-color: #a14db8;
+  color: #fff;
+}
+.btn_add:hover {
+  background-color: #97238c;
+  border: 1px solid #97238c;
+}
+
+.error {
+  font-size: 25px;
+  margin-top: 2rem;
+}
+
+.flag {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+}
+
+.country_info {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
