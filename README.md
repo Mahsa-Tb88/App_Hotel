@@ -1,5 +1,5 @@
 # React + Vite
-online Project : https://app-hotel-neon.vercel.app/bookmark/
+online Project : https://app-hotel-neon.vercel.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
