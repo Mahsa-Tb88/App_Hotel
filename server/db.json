@@ -1325,112 +1325,22 @@
   ],
   "bookmarks": [
     {
-      "cityName": "Abalessa",
-      "country": "Algeria",
-      "countryCode": "DZ",
-      "latitude": "23.18455079512732",
-      "longitude": "3.795523257510883",
-      "host_location": "Abalessa Algeria",
-      "id": 1
-    },
-    {
-      "cityName": "Mahidasht",
+      "cityName": "Mehraban",
       "country": "Iran (Islamic Republic of)",
       "countryCode": "IR",
-      "latitude": "34.32869425037187",
-      "longitude": "46.724183117022086",
-      "host_location": "Mahidasht Iran (Islamic Republic of)",
-      "id": 4
+      "latitude": "37.825209633560235",
+      "longitude": "47.17323303222656",
+      "host_location": "Mehraban Iran (Islamic Republic of)",
+      "id": 2
     },
     {
-      "cityName": "Sanandaj",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "35.31372444726279",
-      "longitude": "47.03114358752335",
-      "host_location": "Sanandaj Iran (Islamic Republic of)",
-      "id": 5
-    },
-    {
-      "cityName": "A Dakhla Oasis",
-      "country": "Egypt",
-      "countryCode": "EG",
-      "latitude": "25.02090651422749",
-      "longitude": "29.09059588509316",
-      "host_location": "A Dakhla Oasis Egypt",
-      "id": 7
-    },
-    {
-      "cityName": "Baba Kot",
-      "country": "Pakistan",
-      "countryCode": "PK",
-      "latitude": "28.43528783183169",
-      "longitude": "67.78003711374224",
-      "host_location": "Baba Kot Pakistan",
-      "id": 8
-    },
-    {
-      "cityName": "Ahar",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "38.53097889440024",
-      "longitude": "47.16773986816407",
-      "host_location": "Ahar Iran (Islamic Republic of)",
-      "id": 9
-    },
-    {
-      "cityName": "Tabriz",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "37.94419750075404",
-      "longitude": "46.37672424316407",
-      "host_location": "Tabriz Iran (Islamic Republic of)",
-      "id": 10
-    },
-    {
-      "cityName": "Ferolles-Attilly",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "48.75281895963222",
-      "longitude": "2.634658813476563",
-      "host_location": "Ferolles-Attilly France",
-      "id": 11
-    },
-    {
-      "cityName": "Sari",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "36.601193285301704",
-      "longitude": "53.01795959472656",
-      "host_location": "Sari Iran (Islamic Republic of)",
-      "id": 12
-    },
-    {
-      "cityName": "Villers-aux-Noeuds",
-      "country": "France",
-      "countryCode": "FR",
-      "latitude": "49.18367483593742",
-      "longitude": "3.996963500976563",
-      "host_location": "Villers-aux-Noeuds France",
-      "id": 13
-    },
-    {
-      "cityName": "Lohra",
-      "country": "Germany",
-      "countryCode": "DE",
-      "latitude": "50.68245937431572",
-      "longitude": "8.633193969726564",
-      "host_location": "Lohra Germany",
-      "id": 14
-    },
-    {
-      "cityName": "Ahar",
-      "country": "Iran (Islamic Republic of)",
-      "countryCode": "IR",
-      "latitude": "38.56677260893379",
-      "longitude": "46.88758850097656",
-      "host_location": "Ahar Iran (Islamic Republic of)",
-      "id": 15
+      "cityName": "Eruh",
+      "country": "Turkiye",
+      "countryCode": "TR",
+      "latitude": "37.77414180685436",
+      "longitude": "42.22938537597657",
+      "host_location": "Eruh Turkiye",
+      "id": 3
     }
   ],
   "posts": [

@@ -39,12 +39,25 @@ function BookmarkProvider({ children }) {
         setIsLoadingCurrBookmark(false);
       }
     }
+    FetchBookmarkList();
   }, []);
   async function createBookmark(newBookmark) {
     setIsLoadingCurrBookmark(true);
     try {
       const { data } = await axios.post(`${Base_URL}/bookmarks/`, newBookmark);
       setBookmarks((prev) => [...prev, data]);
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
+      setIsLoadingCurrBookmark(false);
+    }
+  }
+
+  async function deleteBookmark(id) {
+    setIsLoadingCurrBookmark(true);
+    try {
+      await axios.delete(`${Base_URL}/bookmarks/${id}`);
+      setBookmarks((prev) => prev.filter((item) => item.id != id));
     } catch (error) {
       toast.error(error.message);
     } finally {
@@ -60,6 +73,8 @@ function BookmarkProvider({ children }) {
         currentBookmark,
         getBookmark,
         createBookmark,
+        setBookmarks,
+        deleteBookmark,
       }}
     >
       {children}
